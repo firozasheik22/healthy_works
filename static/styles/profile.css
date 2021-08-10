@@ -1,0 +1,26 @@
+
+  section {
+    padding-top: 60px;
+    overflow: hidden;
+  }
+  
+  .section-title {
+    padding-bottom: 40px;
+  }
+  
+
+  
+  .section-title p {
+    margin: 0;
+    margin: 0;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #151515;
+  }
+#change-password{
+  margin: 2rem;
+    align-items: center;
+    text-align: center;
+}

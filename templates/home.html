@@ -1,0 +1,713 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta name="viewport" content="width-device-width, initial-scale=1">
+  <title>Healthy Works</title>
+
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <df-messenger
+    intent="WELCOME"
+    chat-title="hwbot"
+    agent-id="3b4fe60c-ef13-40f4-9046-4ab641e8bb6b"
+    language-code="en"
+  ></df-messenger>
+<!--bootstrap-->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+<link href="{% static 'styles/home.css'%}">
+<link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+
+  <!-- <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css	"> -->
+
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+    -->
+
+<!-- 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/> -->
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Amiri&family=Antic+Slab&display=swap" rel="stylesheet">
+</head>
+<style>
+  df-messenger {
+   --df-messenger-bot-message: #199c66;
+   --df-messenger-button-titlebar-color:#199c66 ;
+   --df-messenger-chat-background-color: #fafafa;
+   --df-messenger-font-color: white;
+   --df-messenger-send-icon: #199c66;
+   --df-messenger-user-message: #f38d27;
+  }
+  .qsn{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+  }
+  .form-check-input{
+    text-align: left;
+  }
+
+  
+section{
+  padding-top :3%;
+  padding-bottom:3%;
+}
+
+
+.heading{
+  text-align: center;
+  text-decoration: underline;
+  font-family: 'Hahmlet', serif;
+  padding-bottom: 3%;
+}
+
+/* === header section == */
+
+.navbar .navbar-brand img{
+  height: 4rem;
+  width: 6rem;
+  margin-left: 1vw;
+}
+
+@media (max-width: 1080px){
+  .navbar .navbar-brand img{
+      height: 4rem;
+      width: 6rem;
+  }
+}
+
+
+.navbar .nav-item:hover{
+  background-color: #199c66 ;
+}
+header.container-fluid{
+    background: #FF5F6D;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  /* end */
+
+
+    
+  
+  /* === contact section === */
+  
+  #tip 
+          {
+              display:none;  
+          }
+  
+          .fadeIn
+          {
+            animation-duration: 3s;
+          }
+  
+          .form-control
+          {
+            border-radius: 1px;
+            border:1px solid #EDEDED;
+          }
+          .form-group{
+            padding:1% 0;
+          }
+  
+          .form-control:focus
+          {
+            border:1px solid #199c66 ;
+          }
+  
+          .textarea-contact
+          {
+            resize:none; 
+          }
+  
+          .btn-send
+          {
+            border-radius: 0px;
+            border:1px solid #199c66 ;
+            background:#199c66 ;
+            color:#fff; 
+          }
+  
+          .btn-send:hover
+          {
+            border:1px solid #199c66 ;
+            background:#fff;
+            color:#199c66 ;
+            transition:background 0.5s;   
+          }
+  
+          .second-portion
+          {
+            margin-top:50px; 
+          }
+  
+              @import "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css";
+      @import "http://fonts.googleapis.com/css?family=Roboto:400,500";
+  
+      .boxx > .iconn { text-align: center; position: relative; }
+      .boxx > .iconn > .image { position: relative; z-index: 2; margin: auto; width: 88px; height: 88px; border: 8px solid white; line-height: 88px; border-radius: 50%; background: #199c66 ; vertical-align: middle; }
+      .boxx > .iconn:hover > .image { background: #333; }
+      .boxx > .iconn > .image > i { font-size: 36px !important; color: #fff !important; }
+      .boxx > .iconn:hover > .image > i { color: white !important; }
+      .boxx > .iconn > .infoo { margin-top: -30px; background: rgba(0, 0, 0, 0.04); border: 1px solid #e0e0e0; padding: 35px 0 0 0; min-height:163px;}
+      .boxx > .iconn:hover > .infoo { background: rgba(0, 0, 0, 0.04); border-color: #e0e0e0; color: white; }
+      .boxx > .iconn > .infoo > h3.title { font-family: "Robot",sans-serif !important; font-size: 16px; color: #222; font-weight: 700; }
+      .boxx > .iconn > .infoo > p { font-family: "Robot",sans-serif !important; font-size: 13px; color: #666; line-height: 1.5em; margin: 20px;}
+      .boxx > .iconn:hover > .infoo > h3.title, .box > .icon:hover > .info > p, .box > .icon:hover > .info > .more > a { color: #222; }
+      .boxx > .iconn > .infoo > .more a { font-family: "Robot",sans-serif !important; font-size: 12px; color: #222; line-height: 12px; text-transform: uppercase; text-decoration: none; }
+      .boxx > .iconn:hover > .infoo > .more > a { color: #fff; padding: 6px 8px; background-color: #63B76C; }
+      .boxx .space { height: 30px; }
+  
+      @media only screen and (max-width: 768px)
+      {
+        .contact-form
+        {
+          margin-top:25px; 
+        }
+  
+        .btn-send
+        {
+          width: 100%;
+          padding:10px; 
+        }
+  
+        .second-portion
+        {
+          margin-top:25px; 
+        }
+      }
+  
+  
+      @media only screen and (max-width: 990px) {
+    .map{
+    height:320px;
+    width: 100%;
+  }
+  }
+  /* === end of contact section === */
+</style>
+<body>
+
+  <header>
+    
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-secondary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="{% static 'images/logo.png' %}"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" style="font-size: large;color:white;">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../accounts/contact" style="font-size: large;color:white;">Contact</a>
+            </li>
+            
+ 
+            <li class="nav-item">
+
+              <div class="btn-group dropleft">
+                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/fox.jpg" width="40" height="40" class="rounded-circle">
+              
+                </button>
+              
+              <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="../users/profile">Profile</a>
+                <a class="dropdown-item" href="../accounts/logout">{% if user.is_authenticated %}
+                  Logout
+                  {%endif%}</a>
+              </div> 
+              </div>
+              
+
+                </li>
+
+          </ul>
+          
+        </div>
+      </div>
+    </nav>	
+
+
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{% static 'images/hw1.jpg'%}" class="d-block w-100" alt="...">
+
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'images/hw2.jpg'%}" class="d-block w-100" alt="...">
+
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'images/hw3.jpg'%}" class="d-block w-100" alt="...">
+
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+</header>
+<!--
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top  navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand logo" style="margin-bottom: 5rem;" ><img style="height: 6rem;width:6rem" src="default1.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="https://s3.eu-central-1.amazonaws.com/bootstrapbaymisc/blog/24_days_bootstrap/fox.jpg" width="40" height="40" class="rounded-circle">
+              </a>
+              <div class="dropdown-menu row" style="float: left;" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item navtext col-lg-12 col-sm-12" href="#">Dashboard</a>
+                <a class="dropdown-item navtext col-lg-12 col-sm-12" href="profile">Edit Profile</a>
+                <a class="dropdown-item navtext col-lg-12 col-sm-12" href="logout"> {% if user.is_authenticated %}
+                  Logout
+                  {%endif%}</a>
+                </div>  
+                </li>
+            <li class="nav-item">
+              <a class="nav-link active navlink" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active navlink" href="#">my progress</a>
+            </li>
+            
+  
+   
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="{% static 'images/hw1.jpg'%}" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block" style="color: green;">
+            <h5>Healthy Works</h5>
+            <p>Being healthy is not a goal ,it's a way of living.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'images/hw2.jpg'%}" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Healthy Education</h5>
+            <p>Education is a shared commitment between dedicated teachers, motivated students and enthusiastic parents with high expectations.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'images/hw3.jpg'%}" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Mental well-being</h5>
+            <p>Your mental health is a priority.your happiness is essential.your self-care is a necessity..</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    
+
+</header>
+-->
+  <section id="hero1" class="d-flex align-items-center justify-content-center">
+ 
+
+    
+  </section>
+
+  <!-- survey section -->
+</section>
+<section class="survey">
+  <div style="text-align: center; padding-bottom: 3%;">
+      <h4 >Please fill out the form to receive health suggestions
+        </h4>
+
+  </div>
+    <div class="row ">
+        
+      <div style="text-align: center;" class="col-sm-12 col-lg-12 col-md-12">
+      
+<button style="text-align: center;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Take survey
+</button>
+  
+
+
+<!-- Modal -->
+<div class="modal fade modal-dialog-scrollable" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="text-align: center;">Survey</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container ">
+          <h4 class="heading" style="text-decoration:none;" >Hello {{user.username}} <br>This is your health survey</h4>
+           
+           
+           <form method='post' action=''>
+              {% csrf_token %}
+              {% for q in questions%}
+              <div class="form-group">
+                <label for="question" class="qsn">{{q.question}}</label>
+              </div>
+              <div class="form-check">
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio"  name="{{q.question}}" id="gridRadios1" value="option1" >
+                      <label class="form-check-label" for="gridRadios1">
+                          {{q.op1}}
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio"  name="{{q.question}}" id="gridRadios2" value="option2">
+                      <label class="form-check-label" for="gridRadios2">
+                          {{q.op2}}
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio"  name="{{q.question}}" id="gridRadios1" value="option3">
+                      <label class="form-check-label" for="gridRadios1">
+                          {{q.op3}}
+                      </label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio"  name="{{q.question}}" id="gridRadios2" value="option4">
+                      <label class="form-check-label" for="gridRadios2">
+                          {{q.op4}}
+                      </label>
+                  </div>
+                  <br>
+              </div>    
+              {% endfor %}
+              <br>
+              <button href="" type="submit" class="btn btn-primary">Submit</button>
+            </form>
+                 
+           
+          </div>
+          
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+        </div>
+    </div>
+
+</section>
+  <!-- end of survey section -->
+
+
+  <!-- === know your health section === -->
+
+
+  <div class="container ">
+       <div class="row justify-content-center"> 
+         <div class="col-lg-3 col-md-2 col-sm-0"> </div>
+         <div class="col-lg-6 col-md-8 col-sm-12 justify-content-center">
+               <div class="card-columns" >
+        <div class="card justify-content-center" align="centre " style="width: 32rem; border:5px black solid">
+            <img class="card-img-top" src="{% static 'images/know-your-health.png'%}" alt="Card image cap">
+            <div class="card-body">
+                <h4 class="card-title heading">Report</h4>
+ 
+                <p class="card-text" style="font-size: large; font-weight: 200; font-family: 'Amiri', serif;">{{result}}</p>
+                <!--<p class="card-text">Your health progress is {{percent}}</p>
+                <p class="card-text">previous : {{previous}}</p>
+                <p class="card-text">progress : {{progress}}</p>
+                {% if chart %}
+                    <img src="data:image/png;base64,{{chart|safe}}">
+                {% endif %}-->
+            </div>
+        </div>
+    </div>
+ </div>
+ <div class="col-lg-3 col-md-2 col-sm-0"> </div>
+ </div>
+
+</div>
+  <!-- === end of know your health section === -->
+
+  
+<!-- === contact section === -->
+
+<section class="contact-section">
+  <div class="container animated fadeIn">
+
+    <div class="row">
+      <h2 class="heading" > Contact Us </h2>
+     
+        <div class="map col-lg-6 col-md-12 col-sm-12">
+        <iframe  width="100%" height="100%;" frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3798.3861539630434!2d83.34015411494428!3d17.820523887820432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a395bedc7efb603%3A0x87c06caab54e902a!2sGVP%20College%20of%20Engineering%20(Autonomous)!5e0!3m2!1sen!2sin!4v1598167973876!5m2!1sen!2sin" allowfullscreen></iframe>
+        </div>
+  
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <form action="https://docs.google.com/forms/u/6/d/e/1FAIpQLSdR1LwpKtEg1xKieqWmNseaJEdRaI1k9rjFXosJfG0TYRTpsA/formResponse" class="contact-form" method="post" autocomplete="off">
+    
+              <div class="form-group">
+                <input type="text" class="form-control" id="first name" name="entry.513500318" placeholder="First Name" required="" autofocus="">
+              </div>
+  
+              <div class="form-group">
+                <input type="text" class="form-control" id="last name" name="entry.58732079" placeholder="Last Name" required="" autofocus="">
+              </div>
+          
+          
+              <div class="form-group form_left">
+                <input type="email" class="form-control" id="email" name="entry.782133515" placeholder="Email" required="">
+              </div>
+          
+            <div class="form-group">
+                 <input type="text" class="form-control" id="phone" name="entry.17976770" onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="10" placeholder="Mobile No." required="">
+            </div>
+            <div class="form-group">
+            <textarea class="form-control textarea-contact" rows="5" id="comment" name="entry.658466632" placeholder="Type Your Message/Feedback here..." required=""></textarea>
+            <br>
+            <div style="text-align: center;">
+              <button class="btn btn-default btn-send"> <span class="glyphicon glyphicon-send"></span> Send </button>
+            </div>
+            </div>
+           </form>
+        </div>
+
+    </div>
+  
+    <div class="container second-portion">
+    <div class="row">
+          <!-- Boxes de Acoes -->
+        <div class="col-xs-12 col-sm-6 col-lg-4">
+        <div class="boxx">							
+          <div class="iconn">
+            <div class="image"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+            <div class="infoo">
+              <h3 class="title">MAIL </h3>
+              <p>
+                <i class="fa fa-envelope" aria-hidden="true"></i> healthyworks2021@gmail.com
+                <br>
+                <br>
+              </p>
+            
+            </div>
+          </div>
+          <div class="space"></div>
+        </div> 
+      </div>
+        
+          <div class="col-xs-12 col-sm-6 col-lg-4">
+        <div class="boxx">							
+          <div class="iconn">
+            <div class="image"><i class="fa fa-mobile" aria-hidden="true"></i></div>
+            <div class="infoo" width=100% height=100%>
+              <h3 class="title">CONTACT</h3>
+                <p>
+                <i class="fa fa-mobile" aria-hidden="true"></i> &nbsp (+91)-9624XXXXX
+                <br>
+                <br>
+                <i class="fa fa-mobile" aria-hidden="true"></i> &nbsp  (+91)-756706XXXX
+              </p>
+            </div>
+          </div>
+          <div class="space"></div>
+        </div> 
+      </div>
+        
+          <div class="col-xs-12 col-sm-6 col-lg-4">
+        <div class="boxx">							
+          <div class="iconn">
+            <div class="image"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+            <div class="infoo">
+              <h3 class="title">ADDRESS</h3>
+                <p>
+                 <i class="fa fa-map-marker" aria-hidden="true"></i> 
+                  Gayatri Vidya Parishad College of Engineering (Autonomous)<br>
+                  Madhurawada<br>
+                  Visakhapatnam - 530 048<br>
+                  Andhra Pradesh<br>
+                  India
+                  
+              </p>
+            </div>
+          </div>
+          <div class="space"></div>
+        </div> 
+      </div>		    
+      <!-- /Boxes de Acoes -->
+      
+      <!--My Portfolio  dont Copy this -->
+        
+    </div>
+  </div>
+  
+  </div>
+  </section>
+
+
+  
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js" ></script>
+ <!--nav-->
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+ </script> 
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+ </script> 
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+ </script>
+
+ <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+ 
+<script>
+ 
+  $(document).ready(function(){
+    $("#testimonial-slider").owlCarousel({
+        items:1,
+        itemsDesktop:[1000,1],
+        itemsDesktopSmall:[979,1],
+        itemsTablet:[768,1],
+        pagination:true,
+        navigation:false,
+        navigationText:["",""],
+        slideSpeed:1000,
+        singleItem:true,
+        autoPlay:true
+    });
+});
+</script>
+<!--
+<script>
+  $(document).ready(function(){
+    if(sessionStorage.getItem('#popup')!=='true')
+    {
+      $('#popup').modal('show');
+      sessionStorage.setItem('#popup',true);
+    }
+  });
+</script>
+
+<script>
+  
+$(document).ready(function () {
+  // Check if user saw the modal
+  var key = 'hadModal',
+      hadModal = localStorage.getItem(key);
+
+  // Show the modal only if new user
+  if (!hadModal) {
+      $('#popup').modal('show');
+  }
+
+  // If modal is displayed, store that in localStorage
+  $('#popup').on('shown.bs.modal', function () {
+      localStorage.setItem(key, true);
+  })
+});
+
+</script>
+<script>
+$j(document).ready(function() {
+  if(localStorage.getItem('popState') != 'shown'){
+      $j("#popup").fadeIn();
+      localStorage.setItem('popState','shown')
+  }
+
+  $j('#popup-close, #popup').click(function(e) // You are clicking the close button
+  {
+      $j('#popup').fadeOut(); // Now the pop up is hiden.
+  });
+});
+</script>
+-->
+
+<script type="text/javascript" src="scripts/jquery.cookies.2.2.0.min.js"></script> 
+
+<script>
+  $(document).ready(function() {
+    if($.cookie("{{user.username}}")==null){
+      $('#popup').modal('show');
+      $.cookie("{{user.uername}}","2");
+    }
+  });
+</script>
+<!-- <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js	"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js	"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+ -->
+
+ 
+</body>
+
+</html>

@@ -1,0 +1,282 @@
+.survey{
+    margin: 2rem;
+    align-items: center;
+    text-align: center;
+  }
+
+
+
+
+  
+  
+  .heading 
+  {
+    margin: 20px auto;
+    color: #000000;
+  }
+  
+  .filterBox
+  {
+    margin: 40px auto;
+  }
+  
+  .filterBox .filter-tabs
+  {
+    padding: 20px;
+    background-color:#3e4041;
+  }
+  
+  .filter-sort .navigation
+  {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .filter-sort .navigation a
+  {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: poppins;
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+  
+  .navigation .active
+  {
+      font-size: large!important;
+      font-weight: 1000;
+    color: rgb(0, 0, 0);
+  }
+  
+  .navigation .button:hover
+  {
+    background-color: #d4d0cc;
+    color: rgb(5, 5, 5);
+  }
+  
+  .thumbnails-filter
+  {
+    display: none;
+  }
+  
+  #filter
+  {
+    outline: none;
+    border: none;
+    color: #fff;
+    background-color: #fb8c00;
+    padding: 5px;
+  }
+  
+  .cs-team {
+    padding: 20px 20px;
+    background-color: #F6F8FF;
+    box-shadow:
+    10px 10px 10px #fff,
+    -10px -10px 10px #f9f9f9;
+  }
+  
+  .cs-team .team-heading {
+    padding: 30px;
+  }
+  
+  .cs-team .single-team {
+    background-color: #3b5057;
+    margin-bottom: 10px;
+    box-shadow:
+          10px 10px 10px #d1d9e6,
+          -10px -10px 10px #f9f9f9;
+  }
+  
+  /* .cs-team .shot-thumbnail
+  {
+    box-shadow:
+          2px 2px 24px #d1d9e6,
+          -2px -2px 24px #f9f9f9;
+  } */
+  
+  .cs-team .img-area img {
+    max-height: 250px;
+  }
+  
+
+  
+  .cs-team .single-team {
+    background-color: #fc9b1c;
+    margin-bottom: 10px;
+    box-shadow: 2px 2px 10px #e1e1e1;
+  }
+  
+
+
+  
+  /* @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  } */
+  
+  @keyframes spin {
+    10%{
+      transform: rotate(0deg);
+    }
+    50%{
+      transform: rotate(180deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+  
+  .team-heading {
+    padding: 30px 0;
+  }
+  
+  .team-heading .underline {
+    background-color: #000;
+    border: 2px solid #000;
+    margin-top: -5px;
+  }
+  
+  .team-heading a {
+    color: #000;
+  }
+  
+  .single-team:hover img {
+    transform: scale(1.2);
+  }
+  
+  .img-area {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .img-area img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    vertical-align: top;
+  }
+  
+  .cs-team .img-area img {
+    max-height: 350px;
+  }
+  
+  .img-area img {
+    transition: all 0.4s ease 0s;
+  }
+  
+  @media (max-width: 768px) {
+    .img-area img {
+        display: inline-block;
+    }
+  }
+  
+
+  @keyframes anime-width {
+    0%{
+      width: 0px;
+    }
+    100%{
+      width: 70px;
+    }
+  }
+  
+  @keyframes anime-height {
+    0%{
+      height: 0px;
+    }
+    100%{
+      height: 70px;
+    }
+  }
+  
+
+
+  
+  .img-text {
+    padding: 10px 10px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .img-text h4 {
+    margin: 0 0 5px;
+    font-size: 25px;
+    font-family: bignoodletitling;
+  }
+  
+  .img-text h5 {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  
+  .team {
+    margin: 40px 0;
+  }
+  
+  input.right {
+    float: right;
+  }
+  
+  .team_members
+  {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .team_members a
+  {
+    text-decoration: none;
+    color: #fff;
+    background-color: #fc9b1c;
+    padding: 10px;
+  }
+  
+  .team_members a:hover
+  {
+    color: #000;
+    background-color: #ffcc00;
+    transform-origin: left;
+    transition: background-color 0.5s ease;
+  }
+  
+  @media (max-width:970px) {
+    body{
+      margin: 5px auto;
+      overflow-x: hidden;
+    }
+    .filterBox .filter-tabs{
+      display: none;
+    }
+    .thumbnails-filter
+    {
+      display: block;
+    }
+  }
+  
+  
+  @media (max-width: 992px) {
+    .offcanvas-header{ display:block; }
+    .navbar-collapse {
+      position: fixed;
+      top:0; 
+      bottom: 0;
+      left: 100%;
+      width: 100%;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      overflow-y: auto;
+      visibility: hidden;
+      background-color: #fb8c00;
+      transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
+    }
+    .navbar-collapse.show {
+      visibility: visible;
+      transform: translateX(-100%);
+    }
+  }
+
